@@ -4,8 +4,8 @@ class LdapServerGrailsPlugin {
 
 	static beanNameSuffix = "LdapServer"
 
-	def version = "1.0-SNAPSHOT"
-	def grailsVersion = "1.1 > *"
+	def version = "0.1.9"
+	def grailsVersion = "2.0 > *"
 	def dependsOn = [:]
 	def watchedResources = ["file:./grails-app/ldap-servers/*/data/*.ldif", "file:./grails-app/ldap-servers/*/schema/*.ldif"]
 
@@ -14,6 +14,7 @@ class LdapServerGrailsPlugin {
 	def title = "Embedded LDAP Server Plugin"
 	def description = 'Allows the embedding of an LDAP directory (via ApacheDS) for testing purposes'
 	def documentation = "http://grails.org/plugin/grails-ldap-server"
+	def scm = [ url: "https://github.com/bobbywarner/grails-ldap-server" ]
 
 	def pluginExcludes = ["grails-app/ldap-servers/**"]
 

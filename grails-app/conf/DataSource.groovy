@@ -7,7 +7,9 @@ dataSource {
 hibernate {
     cache.use_second_level_cache=true
     cache.use_query_cache=true
-    cache.provider_class='com.opensymphony.oscache.hibernate.OSCacheProvider'
+	cache.region.factory_class = 'org.hibernate.cache.SingletonEhCacheRegionFactory'
+	singleSession = true
+	flush.mode = 'manual'
 }
 // environment specific settings
 environments {

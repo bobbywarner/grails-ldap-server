@@ -1,3 +1,4 @@
+grails.project.dependency.resolver = "maven"
 grails.project.dependency.resolution = {
 	inherits( "global" )
 	repositories {
@@ -11,12 +12,12 @@ grails.project.dependency.resolution = {
 		// the following transitive dep is included to workaround a failure during a clean compile
 		compile 'org.apache.directory.shared:shared-ldap:0.9.12'
 	}
-	
+
 	plugins {
-		build (":release:1.0.1", ":svn:1.0.2") {
+		build (":release:3.1.1", ":rest-client-builder:2.1.1") {
 			export = false
 		}
-		test (":hibernate:$grailsVersion", ":tomcat:$grailsVersion") {
+		test (":hibernate:3.6.10.18", ":tomcat:7.0.55.2") {
 			export = false
 		}
 	}
