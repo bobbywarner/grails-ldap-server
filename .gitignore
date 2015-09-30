@@ -1,5 +1,8 @@
+*.iml
+*.iws
 *.log
-target
-target-eclipse
-*.xml
-*.zip
+.DS_Store
+.gradle
+.idea
+.settings
+build
