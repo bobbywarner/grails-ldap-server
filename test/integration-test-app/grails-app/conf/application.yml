@@ -1,0 +1,21 @@
+grails:
+   profile: web
+info:
+   app:
+      name: '@info.app.name@'
+      version: '@info.app.version@'
+      grailsVersion: '@info.app.grailsVersion@'
+server:
+   port: 8238
+spring:
+   groovy:
+      template:
+         check-template-location: false
+ldapServers:
+   d1:
+      base: 'dc=d1'
+      port: 10389
+   d2:
+      base: 'dc=d2'
+      port: 10340
+      indexed: ['objectClass']
