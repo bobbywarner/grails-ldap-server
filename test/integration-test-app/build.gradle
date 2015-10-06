@@ -47,7 +47,7 @@ dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-logging'
 	compile 'org.springframework.boot:spring-boot-starter-tomcat'
 
-	compile 'org.grails.plugins:ldap-server:TODO'
+	compile 'org.grails.plugins:ldap-server:1.0.0'
 
 	testCompile 'org.grails:grails-plugin-testing'
 
