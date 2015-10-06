@@ -1,0 +1,11 @@
+grails:
+   profile: plugin
+   doc:
+      authors: 'Luke Daley'
+      license: 'Apache License 2.0'
+      title:   'Embedded LDAP Server Plugin'
+info:
+   app:
+      name: '@info.app.name@'
+      version: '@info.app.version@'
+      grailsVersion: '@info.app.grailsVersion@'
